@@ -17,15 +17,7 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8'
-    - name: Run TestProject Agent
-      env:
-        TP_API_KEY: ${{ secrets.TP_API_KEY }} # < Let Secrets handle your keys
-      run: |
-        envsubst < .github/ci/docker-compose.yml > docker-compose.yml
-        cat docker-compose.yml
-        docker-compose -f docker-compose.yml up -d
-    - name: Wait for Agent to Register
-      run: bash .github/ci/wait_for_agent.sh
+    - name: Python test
     - run: pytest
       env:
         TP_DEV_TOKEN: ${{ secrets.TP_DEV_TOKEN }} # < Let Secrets handle your tokens
