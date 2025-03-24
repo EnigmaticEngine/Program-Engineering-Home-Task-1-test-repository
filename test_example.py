@@ -22,4 +22,4 @@ class TestStringMethods(unittest.TestCase):
     @patch('builtins.input', return_value='1')
     
 if __name__ == "__main__":
-    unittest.main()
+unittest.main()
