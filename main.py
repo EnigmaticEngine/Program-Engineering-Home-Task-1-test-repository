@@ -14,7 +14,7 @@ def characterChoiceConfirmation():
 
     return gamma
 
-def harderInputContol():
+def harderInputControl():
 
     beta = str(input("Введите имя персонажа: "))
 
