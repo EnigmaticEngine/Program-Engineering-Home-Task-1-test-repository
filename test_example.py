@@ -17,7 +17,7 @@ class TestStringMethods(unittest.TestCase):
 
     def test_harderInputControl(self):
 
-        self.assertIsNotNone(main.harderInputContol())
+        self.assertIsNotNone(main.harderInputControl())
 
 if __name__ == '__main__':
 
