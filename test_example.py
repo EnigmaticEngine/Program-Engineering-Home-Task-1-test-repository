@@ -17,9 +17,12 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(main.characterChoiceConfirmation())
 
     def test_harderInputControl(self):
+
         self.assertIsNotNone(main.harder_input_control())
-
-     @patch('builtins.input', return_value='5')
-
+    @patch('builtins.input', return_value='5')
+    
+    def test_harderInputControl(self, mock_input):
+        self.assertIsNotNone(main.harder_input_control())
+    
 if __name__ == '__main__' :
     unittest.main()
