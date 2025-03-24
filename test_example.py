@@ -21,5 +21,5 @@ class TestStringMethods(unittest.TestCase):
         self.assertIsNotNone(main.harder_input_control())
     @patch('builtins.input', return_value='1')
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
