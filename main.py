@@ -24,4 +24,10 @@ def harder_input_control():
             return None
     except ValueError:
         return None
+  
+if __name__ == "__main__":
+    print(Dud())
+    print(inputControl())
+    print(characterChoiceConfirmation())
+    print(harder_input_control())
         
