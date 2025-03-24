@@ -19,7 +19,7 @@ class TestStringMethods(unittest.TestCase):
     def test_harderInputControl(self):
 
         self.assertIsNotNone(main.harder_input_control())
-
+    @patch('builtins.input', return_value='1')
 if __name__ == '__main__':
 
     unittest.main()
