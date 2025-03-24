@@ -4,19 +4,23 @@ def Dud():
 
 def inputControl():
     
-    alfa = int(input("Введите число: "))
-
-    return alfa
+    user_input = int(input("Введите число: "))
+    
+    return user_input
 
 def characterChoiceConfirmation():
 
-    gamma = input('Вы уверены в выборе данного имени? (y/n): ').lower().strip() == 'y'
+    answer = input("Вы уверены в выборе данного имени? (Y/N): ")
 
-    return gamma
+    return answer.upper() == "Y"
 
-def harderInputControl():
-
-    beta = str(input("Введите имя персонажа: "))
-
-    return beta
+def harder_input_control():
+    
+    try: 
+        value = int(input("Введите число от 1 до 10: "))
+        if 1 <= value <= 10:
+            return value
+        else:
+            return None
+if __name__ == "__main__":
 
