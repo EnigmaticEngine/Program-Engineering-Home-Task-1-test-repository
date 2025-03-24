@@ -7,11 +7,11 @@ class TestStringMethods(unittest.TestCase):
     def test_Dud(self):
 
         self.assertEqual(main.Dud(), "A!")
-
+    @patch('builtins.input', return_value='1')
     def test_inputControl(self, mock_input):
         
         self.assertEqual(main.inputControl(), 1)
-
+    @patch('builtins.input', return_value='Y')
     def test_characterChoiceConfirmation(self, mock_input):
 
         self.assertTrue(main.characterChoiceConfirmation())
