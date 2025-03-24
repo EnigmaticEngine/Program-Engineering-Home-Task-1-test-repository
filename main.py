@@ -22,6 +22,8 @@ def harder_input_control():
             return value
         else:
             return None
+    except ValueError:
+        return None
             
 if __name__ == "__main__":
     print(Dud())
