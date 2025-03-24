@@ -20,4 +20,10 @@ def harderInputContol():
 
     return beta
 
+def main_run():
+
+    Dud()
+    inputControl()
+    characterChoiceConfirmation()
+    harderInputControl()
     
